@@ -1,0 +1,407 @@
+/*!
+ * Bootstrap v5.0.2 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
+// scss-docs-end import-stack
+
+
+
+//Desafio clase 12 sass
+// index
+// bucle each 
+$colors: (
+  primary: "#f00",
+  secondary: "#ddd",
+  success: "#00f",
+  warning: "#0f0",
+  danger: "#f00",
+  dark: "#3e3c3c"
+);
+
+@each $key, $val in $colors {
+  .bg-#{$key} {
+    background-color: #{$val} !important;
+  }
+}
+// mapa 
+
+
+.breaCrumb {
+	// background: #5c4040;
+ 
+    text-align: right;
+
+	letter-spacing: 10px;
+	text-transform: uppercase;
+    transition: width 3s;
+}
+.breaCrumb:hover {
+	// background: #5c4040;
+    line-height: 8rem;
+  
+    transition: width 2s;
+}
+
+.servicioIndex {
+padding-top: 4rem;
+padding-bottom: 4rem;
+}
+
+
+.copyright { 
+
+    .copyright__upper{
+        font-size: 14px;
+    }
+}
+.contacto {
+	background-color: map-get($theme-colors, "custom-color");
+}
+  
+footer {
+    padding: 6rem 2rem 6rem 2rem;
+    
+}
+footer .info {
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 2rem;
+	background-color:theme-colors("custom-color");
+}
+footer .info h2 {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+}
+.copyright{
+    padding: 2rem 0 2rem 0 ;
+    background-image: linear-gradient(to right , #060606, #505050);
+}
+
+// custom css
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+/* topMenu */
+.topMenu{
+    /* height: 4rem; */
+	display: flex;
+	justify-content:space-between ;
+	padding-right: 4rem;
+	padding-left: 4rem;
+	line-height: 2rem;
+	align-items: center;
+
+}
+.topMenu .navBar{
+    /* height: 4rem; */
+	display: flex;
+	justify-content:space-around;
+	list-style-type: none;
+	width: 50%;
+
+}
+.topMenu .navBar li a{
+	text-decoration:none;
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+}
+.buscador {
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+}
+.logo {
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+}
+
+
+
+
+.nav-item {
+	margin-right: 20px;
+}
+
+
+
+
+/* inicio */
+
+.indexServicios {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	display: grid;
+	grid-template-areas: 
+	"indexServIzq indexServRight indexServRight indexServRight"
+	"indexServIzq indexServRight indexServRight indexServRight"
+	;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
+	grid-template-rows: 1fr 1fr ;
+}
+.inicioImagen {
+	grid-area: inicioImagen;
+	background-color: red;
+	background: url('../img/slider2.jpeg') no-repeat center center; 
+	height: 600px;
+}
+
+
+.indexServIzq {
+	/* border: 1px solid red; */
+	grid-area: indexServIzq;
+	padding: 4rem;
+	
+}
+
+.indexServIzq h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	
+}
+.indexServRight{
+	grid-area: indexServRight;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+
+
+}
+
+.listaServIndex {
+	/* border: 1px solid red; */
+	width: 27%;	
+	padding: 2rem;
+
+	
+}
+
+.listaServIndex h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+/* inicio end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* quines somos  */
+
+.quienesImagen{
+	grid-area: quienesImagen;
+	background-color: red;
+	background: url('../img/slider1.jpeg') no-repeat center center fixed; 
+	height: 400px;
+}
+.buttonNuestraHistoriaQuienes {
+	margin-top: 2rem;
+	padding: 1.5rem 4rem 1.5rem 4rem;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: white;
+    background: #000;
+    border: 1px solid white;
+	width: 50%;
+
+
+}
+.buttonNuestraHistoriaQuienes:hover {
+	transition: all 2s;
+    color: black;
+    background: #fff;
+    border: 1px solid white;
+	width: 100%;
+}
+.quienesSomos{
+	
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.quienes {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	padding:4rem;
+}
+.quienes h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 40px;
+}
+
+/* quines somos end */
+
+/* servicios */
+
+.servicios{
+
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.servicios {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	padding:4rem;
+}
+.servicios h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 40px;
+}
+.imageServicios {
+display: flex;		
+}
+.imageServicios .imgServ1{
+	background: url('../img/servicios1.jpeg') no-repeat center center; 
+	height: 400px;
+	width: 33%;
+}
+.imageServicios .imgServ2{
+	background: url('../img/servicios2.jpeg') no-repeat center center; 
+	height: 400px;
+	width: 33%;
+
+}
+.imageServicios .imgServ3{
+	background: url('../img/servicios3.jpeg') no-repeat center center; 
+	height: 400px;
+	width: 33%;
+
+}
+
+
+/* servicios end */
+
+/* portafolio */
+.portafolio{
+	display: flex;
+	/* grid-template-areas: 
+	"indexServIzq indexServRight indexServRight indexServRight"
+	"indexServIz indexServRight indexServRight indexServRight"
+	; */
+	flex-wrap: wrap;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	
+}
+.imgServ {
+	width: 33%;
+
+	padding: 1rem;
+}
+.imgServ img {
+	
+	width: 100%;
+	height: auto;
+}
+/* portafolio end */
+
+
+
+/* contacto */
+.contactoImagen{
+	grid-area: quienesImagen;
+	background-color: red;
+	background: url('../img/mapa.png') no-repeat center center fixed; 
+	height: 400px;
+}
+.formulario{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+   padding: 4rem 0 4rem 0;
+}
+.formulario h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+
+}
+.formulario form{
+	margin: 0 auto;
+    width: 50%;
+}
+.formulario form input[type="text"]{
+	margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.formulario form input[type="submit" i]{
+
+border: 1px solid white;
+padding: 2rem 4rem ;
+font-size: 16px;
+font-weight: 600;
+}
+/* contacto end */
+

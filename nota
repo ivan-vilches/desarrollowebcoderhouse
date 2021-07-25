@@ -1,0 +1,28 @@
+
+
+todo el proyecto esta con bootstrap compilado con scss
+
+use bucle each y map 
+@each $key, $val in $colors {
+  .bg-#{$key} {
+    background-color: #{$val} !important;
+  }
+}
+
+map con custom-color :
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "custom-color": #414141
+) !default;
+
+.contacto {
+	background-color: map-get($theme-colors, "custom-color");
+}
