@@ -1,0 +1,272 @@
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git init 
+Reinitialized existing Git repository in /Users/ivanvilches/Documents/coderhouse/desarrollo web/clase 15 git/.git/
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % ls -a
+.                                               404.html                                        index.html
+..                                              404.js                                          nota
+.DS_Store                                       clase 14 desafio extra Vilches.zip              portafolio.html
+.git                                            clase 14 seo coderhouse desarrollo web.docx     quienes-somos.html
+10 mejoras seo .docx                            contacto.html                                   scss
+404.css                                         img                                             servicios.html
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git add .
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git add .
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git -m commit "fix nav-item"
+unknown option: -m
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git commit -m  "fix nav-item"
+[master (root-commit) 54eb59e] fix nav-item
+ Committer: Ivan Vilches Basaul <ivanvilches@MacBook-Air-de-Ivan.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 119 files changed, 26413 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 10 mejoras seo .docx
+ create mode 100644 404.css
+ create mode 100644 404.html
+ create mode 100644 404.js
+ create mode 100644 clase 14 seo coderhouse desarrollo web.docx
+ create mode 100644 contacto.html
+ create mode 100644 img/.DS_Store
+ create mode 100644 img/mapa.png
+ create mode 100644 img/port1.jpeg
+ create mode 100644 img/port2.jpeg
+ create mode 100644 img/port3.jpeg
+ create mode 100644 img/port4.jpeg
+ create mode 100644 img/port5.jpeg
+ create mode 100644 img/port6.jpeg
+ create mode 100644 img/port7.jpeg
+ create mode 100644 img/port8.jpeg
+ create mode 100644 img/port9.jpeg
+ create mode 100644 img/servicios1.jpeg
+ create mode 100644 img/servicios2.jpeg
+ create mode 100644 img/servicios3.jpeg
+ create mode 100644 img/servicios_bg.jpeg
+ create mode 100644 img/slider1.jpeg
+ create mode 100644 img/slider2.jpeg
+ create mode 100644 index.html
+ create mode 100644 nota
+ create mode 100644 portafolio.html
+ create mode 100644 quienes-somos.html
+ create mode 100644 scss/_accordion.scss
+ create mode 100644 scss/_alert.scss
+ create mode 100644 scss/_badge.scss
+ create mode 100644 scss/_breadcrumb.scss
+ create mode 100644 scss/_button-group.scss
+ create mode 100644 scss/_buttons.scss
+ create mode 100644 scss/_card.scss
+ create mode 100644 scss/_carousel.scss
+ create mode 100644 scss/_close.scss
+ create mode 100644 scss/_containers.scss
+ create mode 100644 scss/_dropdown.scss
+ create mode 100644 scss/_forms.scss
+ create mode 100644 scss/_functions.scss
+ create mode 100644 scss/_grid.scss
+ create mode 100644 scss/_helpers.scss
+ create mode 100644 scss/_images.scss
+ create mode 100644 scss/_list-group.scss
+ create mode 100644 scss/_mixins.scss
+ create mode 100644 scss/_modal.scss
+ create mode 100644 scss/_nav.scss
+ create mode 100644 scss/_navbar.scss
+ create mode 100644 scss/_offcanvas.scss
+ create mode 100644 scss/_pagination.scss
+ create mode 100644 scss/_popover.scss
+ create mode 100644 scss/_progress.scss
+ create mode 100644 scss/_reboot.scss
+ create mode 100644 scss/_root.scss
+ create mode 100644 scss/_spinners.scss
+ create mode 100644 scss/_tables.scss
+ create mode 100644 scss/_toasts.scss
+ create mode 100644 scss/_tooltip.scss
+ create mode 100644 scss/_transitions.scss
+ create mode 100644 scss/_type.scss
+ create mode 100644 scss/_utilities.scss
+ create mode 100644 scss/_variables.scss
+ create mode 100644 scss/bootstrap-grid.css
+ create mode 100644 scss/bootstrap-grid.css.map
+ create mode 100644 scss/bootstrap-grid.scss
+ create mode 100644 scss/bootstrap-reboot.css
+ create mode 100644 scss/bootstrap-reboot.css.map
+ create mode 100644 scss/bootstrap-reboot.scss
+ create mode 100644 scss/bootstrap-utilities.css
+ create mode 100644 scss/bootstrap-utilities.css.map
+ create mode 100644 scss/bootstrap-utilities.scss
+ create mode 100644 scss/bootstrap.css
+ create mode 100644 scss/bootstrap.css.map
+ create mode 100644 scss/bootstrap.min.css
+ create mode 100644 scss/bootstrap.scss
+ create mode 100644 scss/forms/_floating-labels.scss
+ create mode 100644 scss/forms/_form-check.scss
+ create mode 100644 scss/forms/_form-control.scss
+ create mode 100644 scss/forms/_form-range.scss
+ create mode 100644 scss/forms/_form-select.scss
+ create mode 100644 scss/forms/_form-text.scss
+ create mode 100644 scss/forms/_input-group.scss
+ create mode 100644 scss/forms/_labels.scss
+ create mode 100644 scss/forms/_validation.scss
+ create mode 100644 scss/helpers/_clearfix.scss
+ create mode 100644 scss/helpers/_colored-links.scss
+ create mode 100644 scss/helpers/_position.scss
+ create mode 100644 scss/helpers/_ratio.scss
+ create mode 100644 scss/helpers/_stretched-link.scss
+ create mode 100644 scss/helpers/_text-truncation.scss
+ create mode 100644 scss/helpers/_visually-hidden.scss
+ create mode 100644 scss/mixins/_alert.scss
+ create mode 100644 scss/mixins/_border-radius.scss
+ create mode 100644 scss/mixins/_box-shadow.scss
+ create mode 100644 scss/mixins/_breakpoints.scss
+ create mode 100644 scss/mixins/_buttons.scss
+ create mode 100644 scss/mixins/_caret.scss
+ create mode 100644 scss/mixins/_clearfix.scss
+ create mode 100644 scss/mixins/_color-scheme.scss
+ create mode 100644 scss/mixins/_container.scss
+ create mode 100644 scss/mixins/_deprecate.scss
+ create mode 100644 scss/mixins/_forms.scss
+ create mode 100644 scss/mixins/_gradients.scss
+ create mode 100644 scss/mixins/_grid.scss
+ create mode 100644 scss/mixins/_image.scss
+ create mode 100644 scss/mixins/_list-group.scss
+ create mode 100644 scss/mixins/_lists.scss
+ create mode 100644 scss/mixins/_pagination.scss
+ create mode 100644 scss/mixins/_reset-text.scss
+ create mode 100644 scss/mixins/_resize.scss
+ create mode 100644 scss/mixins/_table-variants.scss
+ create mode 100644 scss/mixins/_text-truncate.scss
+ create mode 100644 scss/mixins/_transition.scss
+ create mode 100644 scss/mixins/_utilities.scss
+ create mode 100644 scss/mixins/_visually-hidden.scss
+ create mode 100644 scss/utilities/_api.scss
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git log
+commit 54eb59e3ae0b05684a94676b939dd6fb31b10587 (HEAD -> master)
+Author: Ivan Vilches Basaul <ivanvilches@MacBook-Air-de-Ivan.local>
+Date:   Sun Jul 25 00:25:19 2021 -0400
+
+    fix nav-item
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git branch navbar 
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git status
+On branch master
+nothing to commit, working tree clean
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git checkout navbar
+Switched to branch 'navbar'
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git add . 
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git status
+On branch navbar
+nothing to commit, working tree clean
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git status
+On branch navbar
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   scss/bootstrap.css
+        modified:   scss/bootstrap.css.map
+        modified:   scss/bootstrap.scss
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git add .
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git commit -m "fix index headers"
+[navbar 3354e8b] fix index headers
+ Committer: Ivan Vilches Basaul <ivanvilches@MacBook-Air-de-Ivan.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 23 insertions(+), 1 deletion(-)
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git log
+commit 3354e8b5dd2cfdd9b4d2d056934bb543084aefc8 (HEAD -> navbar)
+Author: Ivan Vilches Basaul <ivanvilches@MacBook-Air-de-Ivan.local>
+Date:   Sun Jul 25 12:43:42 2021 -0400
+
+    fix index headers
+
+commit 54eb59e3ae0b05684a94676b939dd6fb31b10587 (master)
+Author: Ivan Vilches Basaul <ivanvilches@MacBook-Air-de-Ivan.local>
+Date:   Sun Jul 25 00:25:19 2021 -0400
+
+    fix nav-item
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git -b
+unknown option: -b
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git log
+commit 3354e8b5dd2cfdd9b4d2d056934bb543084aefc8 (HEAD -> navbar)
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git log --oneline
+3354e8b (HEAD -> navbar) fix index headers
+54eb59e (master) fix nav-item
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git add .
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git commit -m "change h2"   
+[navbar beaa44f] change h2
+ Committer: Ivan Vilches Basaul <ivanvilches@MacBook-Air-de-Ivan.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1 insertion(+), 11 deletions(-)
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git log --oneline
+beaa44f (HEAD -> navbar) change h2
+3354e8b fix index headers
+54eb59e (master) fix nav-item
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git --online --all
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git brancb 
+git: 'brancb' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git branc          
+git: 'branc' is not a git command. See 'git --help'.
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git branch
+* master
+  navbar
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git merge navbar
+Updating 54eb59e..beaa44f
+Fast-forward
+ scss/bootstrap.css     | 5 +++++
+ scss/bootstrap.css.map | 2 +-
+ scss/bootstrap.scss    | 7 +++++++
+ 3 files changed, 13 insertions(+), 1 deletion(-)
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % git log 
+commit beaa44f480417fb143457f1af3ab7825eb015acf (HEAD -> master, navbar)
+Author: Ivan Vilches Basaul <ivanvilches@MacBook-Air-de-Ivan.local>
+Date:   Sun Jul 25 12:47:16 2021 -0400
+
+    change h2
+
+commit 3354e8b5dd2cfdd9b4d2d056934bb543084aefc8
+Author: Ivan Vilches Basaul <ivanvilches@MacBook-Air-de-Ivan.local>
+Date:   Sun Jul 25 12:43:42 2021 -0400
+
+    fix index headers
+
+commit 54eb59e3ae0b05684a94676b939dd6fb31b10587
+Author: Ivan Vilches Basaul <ivanvilches@MacBook-Air-de-Ivan.local>
+Date:   Sun Jul 25 00:25:19 2021 -0400
+
+    fix nav-item
+ivanvilches@MacBook-Air-de-Ivan clase 15 git % 
